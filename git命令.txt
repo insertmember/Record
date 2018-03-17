@@ -1,0 +1,24 @@
+git add .  添加所有文件
+git commit -m “message” 提交
+git pull  抓取
+git push origin dev  推送
+
+
+git branch test 创建分支
+git checkout -b dev origin/dev 创建远程origin的dev分支到本地
+git branch -a  查看远端分支
+git checkout test 切换分支
+
+删除远程分支  
+git branch -r -d origin/branch-name  
+git push origin :branch-name 
+
+合并分支 
+切换到master分支
+git merge dev 
+
+tag 
+git tag 列出标签
+git tag v0.1.2 创建标签
+git tag -d v0.1.2  删除标签
+it push origin –tags # 将本地所有标签一次性提交到git服务器
